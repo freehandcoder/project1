@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bootsrap|Website</title>
+
+
+    <style>
+
+        #main-display .bg-image{
+          background-image:url(../images/showcase.png);
+          background-position:center;
+          background-size:cover;
+          background-repeat:no-repeat;
+          height:50vh;
+        
+        }
+        
+        .text{
+          padding-top: 10px; 
+          text-align:center;
+          color:white;
+          
+        }
+        
+        #newsletter{
+          background-color: #345;
+        }
+        
+        .sidebar{
+          background-image:linear-gradient(to bottom right,rgb(59, 232, 255) , rgb(255, 0, 128));
+          color:white;
+          margin-bottom:15px;
+          margin-top:100px;
+        }
+        
+        .page-heading{
+          margin-top:7%;
+        }
+        
+        .page-about{
+          margin-top:80px;
+        }
+        
+        #move{
+          margin-top:30px;
+        }
+        
+        
+        .navbar{
+          background-image: linear-gradient(to right, rgb(59, 232, 255) , rgb(247, 19, 144));
+        }
+        
+        .navbar-toggler-icon{
+          border:none;
+          color:white;
+          
+        }
+        
+        .navbar li a{
+          font-size:18px;
+          font-weight:500;
+        }
+        
+        .nav-item{
+          margin-left: 15px;
+        }
+        
+        .card-team{
+          margin-bottom:20px;
+          margin-left:50px;
+          
+        }
+        
+        
+        .card img{
+          width:100%;
+          height:100%;
+        }
+        
+        .text-team{
+           margin-left:50px;
+        }
+        
+        .navbar li:hover{
+          background-color:rgba(223, 222, 222, 0.808);
+          border-radius: 5px;
+        
+        }
+        
+        @media(max-width:568px){
+          #newsletter .container{
+            display:block;
+            text-align:center;
+          }
+        
+          .text h1{
+            padding-top:0px;
+            margin-bottom:10px;
+          }
+         
+        
+           #main-display .bg-image{
+            height:60vh;
+            padding-bottom:5px;
+            
+          }
+           .lead{
+            text-align:center;
+            font-size:18px;
+            padding:none;
+          }
+        
+          #move{
+            width:100%;
+            height:100%;
+          }
+        
+          .sidebar{
+        
+            margin-top:0;
+        
+          }
+        
+        .page-heading{
+          margin-top:25%;
+        }
+        
+        #our-team{
+          margin-left:-50px;
+        }
+        
+        
+        #btn-submit{
+          width:100%;
+        }
+        
+        }
+        
+        @media(min-width:768px) {
+          .page-heading{
+            margin-top:70px;
+           
+          }
+        
+          div.lead p{
+            margin-top:25px;
+            padding:none;
+          }     
+        }
+        
+        @media(max-width:600px){
+          .page-heading h1{
+            margin-top:50%;
+          }
+        
+        }
+        
+            </style>
+
+
+
+</head>
+
+<body>
+          <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/englogo.jpg" alt="English Care" width="50px" height="50px" class="d-inline-block text-align-top rounded-circle">
+                    English Care
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto topbar-item">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+            </div>
+
+        </nav>
+
+    </header>
+                <!---SHOWCASE AREA-->
+    <section id="main-display">
+        <div class="bg-image text-center shadow-1-strong ">
+            <div class="text"> 
+                <h1 class="page-heading">Welcome to English Care</h1>
+                
+                <div class="lead mt-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vero?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A blanditiis officia eos voluptatibus alias deserunt.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+                <!--MID SECTION WITH JOIN US BUTTON-->
+    <section id="newsletter">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between py-3 text-white">
+            
+                <h2 >Join with us!!</h2>
+                
+                <form>
+                    <a class="btn btn-primary" href="services.html">Click here to join with us</a>
+                </form>
+
+            </div>
+        </div>
+    </section>
+                
+            <!--OUR TEACHING STYLE-->
+
+       <section class="p-5">
+            <div class="contanier">
+                <div class="row text-center">
+                    <div class="col-md-4  col-sm-12 mb-3">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                               
+                                <div class="h2 mb-3">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                    <h3 class="card-title mb-3" >Monitered Activity</h3>
+                                    <p class=>so this is a dummy paragraph it will be edited later. Lorem ipsum dolor sit amet
+                                         consectetur adipisicing elit. Architecto, fugit?</p>
+                                    <a class="btn btn-primary" href="#">Read More</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col-md-4  col-sm-12 mb-3">
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+                               
+                                <div class="h2 mb-3">
+                                    <i class="bi bi-file-earmark-check"></i>
+                                </div>
+                                    <h3 class="card-title mb-3" >Data Conversion</h3>
+                                    <p>so this is a dummy paragraph it will be edited later. Lorem ipsum dolor sit amet
+                                         consectetur adipisicing elit. Quaerat, nam.</p>
+                                    <a class="btn btn-dark" herf="#">Read More</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col-md-4  col-sm-12 mb-3">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                               
+                                <div class="h2 mb-3">
+                                    <i class="bi bi-clipboard-data"></i>
+                                </div>
+                                    <h3 class="card-title mb-3" >Monitered Activity</h3>
+                                    <p class=>so this is a dummy paragraph it will be edited later. Lorem ipsum dolor sit amet
+                                         consectetur adipisicing elit. Architecto, fugit?</p>
+                                    <a class="btn btn-primary" href="#">Read More</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+       </section>
+            
+
+        <!--FOOTER-->
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                   class="btn btn-primary btn-floating m-1"
+                   style="background-color: #3b5998; border:none; border-radius:50%; color:white;"
+                   href="#!"
+                   target="blank"
+                   role="button"
+                   ><i class="fa fa-facebook-f"></i
+                  ></a>
+      
+                <!-- Twitter -->
+                
+      
+                <!-- Google -->
+                <a
+                   class="btn btn-primary btn-floating m-1"
+                   style="background-color: #dd4b39; border:none;border-radius:50%;color:white"
+                   href="#!"
+                   target="blank"
+                   role="button"
+                   ><i class="fa fa-google"></i
+                  ></a>
+
+                  <!--Youtube-->
+                  <a
+                   class="btn btn-primary btn-floating m-1"
+                   style="background-color: #ee0303c7; border:none;border-radius:50%;color:white"
+                   href="https://www.youtube.com/channel/UClGulDsHJGpV1zgynxHRqVg"
+                   target="blank"
+                   role="button"
+                   ><i class="fa fa-youtube"></i
+                  ></a>
+      
+                <!-- Instagram -->
+                <a
+                   class="btn btn-primary btn-floating m-1"
+                   style="background-color: #ac2bac; border:none; border-radius:50%;color:white;"
+                   href="https://www.instagram.com/hunterhari50/"
+                   target="blank"
+                   role="button"
+                   ><i class="fa fa-instagram"></i
+                  ></a>
+      
+              
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+      
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              <p class="text-dark">&copy;2022 English Care | It brings you on</p>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+
+
+
+
+
+
+
+
+
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
